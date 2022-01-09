@@ -1,0 +1,21 @@
+#display-box {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  margin-top: 40px;
+  gap: 8px;
+  padding: 16px;
+}
+
+#display-picture {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+#location {
+  margin-bottom: 16px;
+}

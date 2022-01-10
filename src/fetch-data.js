@@ -18,8 +18,6 @@ async function getWeatherData(cityName) {
   );
 
   return locationWeather;
-
-  // console.log(locationWeather);
 }
 
 const getTemperature = (weatherData) => {

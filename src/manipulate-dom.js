@@ -45,6 +45,33 @@ const getWeatherIcon = (weatherData) => {
   }
 };
 
+const toggleVisibility = () => {
+  const displayBox = document.querySelector("#display-box");
+  displayBox.classList.toggle("visibility");
+
+  const loader = document.querySelector("#loader");
+  loader.classList.toggle("display");
+};
+
+const clearDOMInfo = () => {
+  const picture = document.querySelector("#picture");
+  const img = document.querySelector("img");
+  const temp = document.querySelector("#temp");
+  const min = document.querySelector("#min");
+  const max = document.querySelector("#max");
+
+  picture.removeChild(img);
+  while (temp.firstChild) {
+    temp.removeChild(temp.firstChild);
+  }
+  while (min.firstChild) {
+    min.removeChild(min.firstChild);
+  }
+  while (max.firstChild) {
+    max.removeChild(max.firstChild);
+  }
+};
+
 const displayWeatherData = (weatherData) => {
   const location = document.querySelector("#location");
   location.textContent = weatherData.name;
@@ -80,4 +107,4 @@ const displayWeatherData = (weatherData) => {
   maxLabel.textContent = "Max";
 };
 
-export default displayWeatherData;
+export { displayWeatherData, clearDOMInfo, toggleVisibility };

@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/SamuelBrook/weather-app/issues"
   },
-  "homepage": "https://github.com/SamuelBrook/weather-app#readme",
+  "homepage": "https://github.com/SamuelBrook/weather-app",
   "devDependencies": {
     "css-loader": "^6.5.1",
     "file-loader": "^6.2.0",

@@ -1,4 +1,4 @@
-import sunIcon from "..src/images/sun.svg";
+import sunIcon from "./images/sun.svg";
 import cloudsIcon from "./images/clouds.svg";
 import cloudsFewIcon from "./images/clouds-few.svg";
 import mistIcon from "./images/mist.svg";

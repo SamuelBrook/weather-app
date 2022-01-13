@@ -1,23 +1,31 @@
+import sunIcon from "./images/sun.svg";
+import cloudsIcon from "./images/clouds.svg";
+import cloudsFewIcon from "./images/clouds-few.svg";
+import mistIcon from "./images/mist.svg";
+import rainIcon from "./images/rain.svg";
+import snowIcon from "./images/snow.svg";
+import thunderIcon from "./images/thunder.svg";
+
 const clouds = document.createElement("img");
-clouds.src = "../src/images/clouds.svg";
+clouds.src = cloudsIcon;
 
 const fewClouds = document.createElement("img");
-fewClouds.src = "../src/images/clouds-few.svg";
+fewClouds.src = cloudsFewIcon;
 
 const sun = document.createElement("img");
-sun.src = "../src/images/sun.svg";
+sun.src = sunIcon;
 
 const rain = document.createElement("img");
-rain.src = "../src/images/rain.svg";
+rain.src = rainIcon;
 
 const thunder = document.createElement("img");
-thunder.src = "../src/images/thunder.svg";
+thunder.src = thunderIcon;
 
 const snow = document.createElement("img");
-snow.src = "../src/images/snow.svg";
+snow.src = snowIcon;
 
 const mist = document.createElement("img");
-mist.src = "../src/images/mist.svg";
+mist.src = mistIcon;
 
 const getWeatherIcon = (weatherData) => {
   const picture = document.querySelector("#picture");

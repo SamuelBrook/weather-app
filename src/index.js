@@ -4,6 +4,7 @@ import {
   clearDOMInfo,
   toggleVisibility,
 } from "./manipulate-dom.js";
+import css from "./styles.css";
 
 const setUpPage = (() => {
   toggleVisibility();
